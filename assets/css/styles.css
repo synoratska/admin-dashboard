@@ -359,12 +359,49 @@ i {
 .card-group .list-link {
     background-color: var(--transparent-button-color);
     color: var(--light-color);
-   
 }
 
 /* Footer */
 
+.footer {
+    font-size: var(--font-size-small);
+    color: var(--dark-color-lighter);
+    background-color: var(--dark-color);
+    padding: 1.35rem 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-medium);
+}
+
+.footer .list-link {
+    padding-left: 0;
+}
+
+.copyright-information {
+    order: 1;
+}
+
 /* Scrollbar */
+
+ ::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3f4254;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2e303b;
+} 
+
 
 /* Media queries */
 @media screen and (min-width: 768px) {
